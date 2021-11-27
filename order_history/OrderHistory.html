@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>장바구니</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/headers/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .sidebar{
+          display: table-cell;
+          width: 15%;
+          min-width: 250px;
+          background-color: #ffffff;
+          vertical-align: auto;
+          margin-left: 20px;
+      }
+      .main{
+          display: table-cell;
+          width: 85%;
+      }
+      .under{
+          background-color: #7f7f7f;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="headers.css" rel="stylesheet">
+    <link href="footers.css" rel="stylesheet">
+  </head>
+  <body>
+
+<main>
+<!-- header !! -->
+
+<header class="p-3 bg-dark text-white">
+  <div class="container">
+    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+      <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+        <img class="bi me-2" width="40" height="32" src="logo.png">
+      </a>
+
+      <ul class="nav col-9 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="#" class="nav-link px-2 text-white">Home</a></li>
+        <li><a href="#" class="nav-link px-2 text-white">기프트샵 상품</a></li>
+        <li><a href="#" class="nav-link px-2 text-white">공동구매</a></li>
+        <li><a href="#" class="nav-link px-2 text-white">찾아오는 길</a></li>
+        <li><a href="#" class="nav-link px-2 text-white">마이페이지</a></li>
+      </ul>
+
+      <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+        <input type="search" class="form-control form-control-dark" placeholder="상품검색" aria-label="Search">
+      </form>
+
+      <div class="text-end">
+        <button type="button" class="btn btn-outline-light me-2">Login</button>
+        <button type="button" class="btn btn-outline-light me-2">Sign-up</button>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- header end  -->
+
+<br><br>
+<div style="width: 1200px;">
+  <h2 style="margin-left: 70px; color: #7f7f7f;"><b>My Page</b></h2>
+  <br>
+  <hr width="1140px" style="margin-left: 60px;">
+
+    <div class = "sidebar">
+        <div class="vstack gap-2 col-md-5 mx-auto">
+            <button type="button" class="btn btn-outline-secondary">주문내역</button>
+            <button type="button" class="btn btn-outline-secondary">배송조회</button>
+            <button type="button" class="btn btn-outline-secondary">장바구니</button>
+            <button type="button" class="btn btn-outline-secondary">회원탈퇴</button>
+          </div>
+    </div>
+    <div class = "main">
+        <br>
+        <h4 style="margin-left: 70px; color: #7f7f7f"><b>최근 주문내역</b></h4>
+        <br>
+        <!-- 주문 내역 테이블 -->
+        <div class="row">
+            <!--Middle Part Start-->
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <td class="text-center">Image</td>
+                                <td class="text-center">상품명 / 주문옵션</td>
+                                <td class="text-center">주문번호</td>
+                                <td class="text-center">수량</td>
+                                <td class="text-center">주문상태</td>
+                                <td class="text-center">주문일</td>
+                                <td class="text-center">합계</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                          <!-- 1번째 열 시작-->
+                            <tr>
+                                <td class="text-center">
+                                    <a href="product.html"><img width="85" class="img-thumbnail"
+                                            title="우유키링" alt="우유키링"
+                                            src="image/p1.jpg">
+                                    </a>
+                                </td>
+                                <td class="text-left"><a href="product.html">우유키링</a>
+                                  <br><br>
+                                  <p>색상: 주황색</p>
+                                </td>
+                                <td class="text-center">#214521</td>
+                                <td class="text-center">1</td>
+                                <td class="text-center">배송준비</td>
+                                <td class="text-center">2021-10-12</td>
+                                <td class="text-right">7,500원</td>
+                            </tr>
+                            <!-- 1번째 열 끝 -->
+                            <!-- 2번째 열 시작 -->
+                            <tr>
+                                <td class="text-center">
+                                    <a href="product.html"><img width="85" class="img-thumbnail"
+                                            title="남색 학잠"
+                                            alt="남색 학잠"
+                                            src="image/p4.jpg">
+                                    </a>
+                                </td>
+                                <td class="text-left"><a href="product.html">남색 학잠</a>
+                                </td>
+                                <td class="text-center">#1565245</td>
+                                <td class="text-center">1</td>
+                                <td class="text-center">배송준비</td>
+                                <td class="text-center">2021-10-12</td>
+                                <td class="text-right">55,000원</td>
+                            </tr>
+                            <!-- 2번째 열 끝 -->
+                            <!-- 3번째 열 시작 -->
+                            <tr>
+                              <td class="text-center">
+                                  <a href="product.html"><img width="85" class="img-thumbnail"
+                                          title="자체제작 학위복"
+                                          alt="자체제작 학위복"
+                                          src="image/p2.jpg">
+                                  </a>
+                              </td>
+                              <td class="text-left"><a href="product.html">자체제작 학위복</a>
+                              </td>
+                              <td class="text-center">#1283345</td>
+                              <td class="text-center">1</td>
+                              <td class="text-center">배송준비</td>
+                              <td class="text-center">2021-10-12</td>
+                              <td class="text-right">70,000원</td>
+                          </tr>
+                          <!-- 3번째 열 끝 -->
+                        </tbody>
+                    </table>
+                </div>
+    </div>
+
+</div>
+
+  </main>
+  <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="shoppingBasket.js"></script>
+      
+  </body>
+</html>
